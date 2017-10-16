@@ -18,4 +18,5 @@ public abstract class City {
 	}
 	
 	abstract double getAnnualTaxes();
+	//REMINDER: the return 0 is there so there are no errors. You stil need to work on the method.
 }

@@ -6,8 +6,10 @@ public class SanDiego extends City {
 		super(population, growthRate);
 		// TODO Auto-generated constructor stub
 	}
+
+	@Override
 	public double getAnnualTaxes() {
-		return 0;
+		return population * growthRate + 1000000;
 	}
 
 }

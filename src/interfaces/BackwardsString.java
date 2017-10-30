@@ -1,13 +1,19 @@
 package interfaces;
 
-public class BackwardsString implements TextFunkifier{
+public class BackwardsString extends SpecialString{
+
+	public BackwardsString(String s) {
+		super(s);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public String funkifyText(String s2) {
-		String phrase = s2;
-		for (int i = 0; i < s2.length(); i++) {
-			System.out.println(phrase.charAt(s2.length()-1));
+		String phrase = "";
+		for (int i = s2.length()-1; i >= 0; i--) {
+			phrase+=s2.charAt(i);
 		}
+		
 		return phrase;
 	}
 
